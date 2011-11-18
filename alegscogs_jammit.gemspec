@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
-  s.name      = 'jammit'
-  s.version   = '0.6.3'         # Keep version in sync with jammit.rb
-  s.date      = '2011-05-26'
+  s.name      = 'alegscogs_jammit'
+  s.version   = '0.6.3.alegscogs'         # Keep version in sync with jammit.rb
+  s.date      = '2011-11-16'
 
-  s.homepage    = "http://documentcloud.github.com/jammit/"
+  s.homepage    = "http://github.com/alegscogs/jammit/"
   s.summary     = "Industrial Strength Asset Packaging for Rails"
   s.description = <<-EOS
     Jammit is an industrial strength asset packaging library for Rails,
@@ -11,11 +11,14 @@ Gem::Specification.new do |s|
     you'd expect, as well as YUI Compressor and Closure Compiler compatibility,
     ahead-of-time gzipping, built-in JavaScript template support, and optional
     Data-URI / MHTML image embedding.
+
+    This is a fork with a tiny patch allowing you to pass options to the include_
+    javascripts helper.
   EOS
 
-  s.authors           = ['Jeremy Ashkenas']
-  s.email             = 'jeremy@documentcloud.org'
-  s.rubyforge_project = 'jammit'
+  s.authors           = ['Jeremy Ashkenas', 'Alex Cox']
+  s.email             = 'alegscogs@gmail.com'
+  s.rubyforge_project = 'alegscogs_jammit'
 
   s.require_paths     = ['lib']
   s.executables       = ['jammit']
